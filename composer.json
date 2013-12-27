@@ -1,0 +1,17 @@
+{
+    "name": "goldfinger/config",
+    "description": "A singleton yaml configuration class.",
+    "authors": [
+        {
+            "name": "Harold Kim",
+            "email": "pokoot@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "autoload": {
+        "classmap": ["src/"]
+    }
+}
