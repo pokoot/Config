@@ -3,3 +3,13 @@ server: localhost
 username: root
 password: 123456
 database: goldfinger
+description_one: >
+    This is desc 1.
+description_two: |
+    This is desc 2.
+parameters_yml:
+    one: uno
+    two: dos
+parameter_array:
+    - uno
+    - dos

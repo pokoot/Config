@@ -21,3 +21,8 @@ print "<Br> username = " . $config->username;
 print "<Br> password = " . $config->password;
 print "<Br> database = " . $config->database;
 print "<Br> siteKey = " . $config->siteKey;
+
+
+print "<br/><br/>";
+
+print_r($config);
