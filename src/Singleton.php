@@ -2,6 +2,15 @@
 
 namespace Goldfinger;
 
+/**
+ * In software engineering, the singleton pattern is a design pattern that
+ * restricts the instantiation of a class to one object.
+ *
+ * @package
+ * @version $id$
+ * @author Harold Kim
+ * @license http://pokoot.com/license.txt
+ */
 class Singleton
 {
 
