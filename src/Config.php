@@ -2,7 +2,7 @@
 
 namespace Goldfinger;
 
-class Config extends Singleton implements \Countable //, \ArrayAccess
+class Config extends Singleton
 {
 
     protected static $instance = null;
@@ -13,13 +13,10 @@ class Config extends Singleton implements \Countable //, \ArrayAccess
 
     public function __construct()
     {
-        print "contructor called";
-
         $temp = array(
-            "config1" => "test 1",
-            "config2" => "test 2"
+            "config_1" => "test 1",
+            "config_2" => "test 2"
         );
-
         $this->values = &$temp;
     }
 
@@ -44,13 +41,5 @@ class Config extends Singleton implements \Countable //, \ArrayAccess
         }
         return $this->values[$key];
     }
-
-
-    public function count()
-    {
-        //return sizeof($this->_values);
-    }
-
-
 
 }

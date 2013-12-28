@@ -5,20 +5,20 @@ $loader = require __DIR__ . "/../vendor/autoload.php";
 
 use Goldfinger\Config;
 
-
-//$c = new Config();
-//$c->setFile("test.yml");
-
-
 Config::setFile("test.yml");
-
 
 $config = Config::getInstance();
 
-$config->username = "Me";
+$config->username = "my_username";
+
+print "<Br> config 1 = " . $config->config_1;
+print "<Br> config 2 = " . $config->config_2;
+print "<Br> username = " . $config->username;
 
 
-print "<Br> config 1 = " . $config->test1;
-print "<Br> config 2 = " . $config->username;
+
+
+
+
 
 
