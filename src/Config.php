@@ -68,7 +68,7 @@ class Config extends Singleton
     {
         if (self::$instance !== null) {
             throw new \Exception("You need to set the path before calling ". __CLASS__ ."::getInstance() method.");
-        } else if (!file_exists($file)) {
+        } elseif (!file_exists($file)) {
             throw new \Exception("The configuration file does not exist.");
         } else {
             self::$file = $file;
@@ -76,11 +76,11 @@ class Config extends Singleton
     }
 
     /**
-     * Property magic methods setters
+     * Property setters from magic methods
      *
      * @access public
-     * @param mixed $key
-     * @param mixed $value
+     * @param  mixed $key
+     * @param  mixed $value
      * @return void
      */
     public function __set($key, $value)
@@ -89,18 +89,18 @@ class Config extends Singleton
     }
 
     /**
-     * Property magic methods getters
+     * Property getters from magic methods
      *
      * @access public
-     * @param mixed $key
+     * @param  mixed $key
      * @return void
      */
     public function __get($key)
     {
-        if (!array_key_exists($key, $this->values)){
+        if (!array_key_exists($key, $this->values)) {
             throw new \Exception("Invalid configuration key - ($key)");
         }
+
         return $this->values[$key];
     }
-
 }

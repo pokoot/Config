@@ -35,7 +35,6 @@ class Singleton
         return $instance;
     }
 
-
     /**
      * Private clone method to prevent cloning of the instance of the
      * *Singleton* instance.
